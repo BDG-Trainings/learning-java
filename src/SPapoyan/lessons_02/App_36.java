@@ -15,5 +15,5 @@ public class App_36 {
         } else {
             System.out.println(2);
         }
-    }
+     }
 }
