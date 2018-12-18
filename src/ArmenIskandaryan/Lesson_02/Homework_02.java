@@ -155,7 +155,91 @@ public class Homework_02 {
         return t;
     }
 
+    static boolean example63() {
+        t = false;
+        int number = 7896;
+        int miavor = number % 10;
+        int tasnavor = (number / 10) % 10;
+        int haryuravor = (number / 100) % 10;
+        int hazaravor = (number /1000) % 10;
+
+        if (miavor == 1 || tasnavor == 1 || haryuravor == 1 || hazaravor ==1) {
+            t = true;
+            System.out.println(1);
+        } else {
+            t = false;
+            System.out.println(0);
+        }
+        return t;
+    }
+
+    static boolean example64() {
+        t = false;
+        char y = 'd';
+        int number = 7896;
+        int miavor = number % 10;
+        int tasnavor = (number / 10) % 10;
+
+        if (miavor + tasnavor == 5) {
+            t = true;
+            y = 's';
+        }
+        System.out.println(y);
+        return t;
+    }
+
+    static boolean example65() {
+        t = false;
+        int number = 7826;
+        int miavor = number % 10;
+        int tasnavor = (number / 10) % 10;
+
+        if (miavor * tasnavor == 12) {
+            t = true;
+            System.out.println("y = 12");
+        } else {
+            t = false;
+            System.out.println("y = 0");
+        }
+        return t;
+    }
+
+    static boolean example66() {
+        t = false;
+        int number = 4895;
+        int miavor = number % 10;
+        int tasnavor = (number / 10) % 10;
+        int haryuravor = (number / 100) % 10;
+        int hazaravor = (number /1000) % 10;
+
+        if (miavor == 4 || hazaravor == 4) {
+            t = true;
+            System.out.println("YES");
+        } else {
+            t = false;
+            System.out.println("NO");
+        }
+        return t;
+    }
+
+    static boolean example69() {
+        t = false;
+        int number = 5608;
+        int y = 0;
+        int miavor = number % 10;
+        int tasnavor = (number / 10) % 10;
+        int haryuravor = (number / 100) % 10;
+        int hazaravor = (number /1000) % 10;
+
+        if (miavor + tasnavor + haryuravor + hazaravor > 20) {
+            t = true;
+            y = 1;
+        }
+        System.out.println(y);
+        return t;
+    }
+
     public static void main(String[] args) {
-        example61();
+        example69();
     }
 }
