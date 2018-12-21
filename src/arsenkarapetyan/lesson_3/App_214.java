@@ -1,4 +1,4 @@
-package arsenkarapetyan.lesson_02;
+package arsenkarapetyan.lesson_3;
 
 public class App_214 {
 
