@@ -22,7 +22,7 @@ public class App_214 {
         int sum = 0;
         int count = 0;
         while (i < arraySize) {
-            if (array[i] < 0) {
+            if (array[i] < 0) {  //bacasakan
                 sum = sum + array[i];
                 count = count + 1;
             }
