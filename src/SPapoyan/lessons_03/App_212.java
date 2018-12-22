@@ -1,6 +1,6 @@
 package SPapoyan.lessons_03;
 
-public class App_211 {
+public class App_212 {
 
     public static void main(String[] args) {
         int number = 5;
@@ -21,6 +21,6 @@ public class App_211 {
                 count = count + 1;
             }
         }
-        System.out.println(+ sum / count);
+        System.out.println(+ (sum / count) * (sum / count) );
     }
 }
