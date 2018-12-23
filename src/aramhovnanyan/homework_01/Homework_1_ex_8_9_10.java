@@ -1,4 +1,4 @@
-package AramHovnanyan.Homework_01;
+package aramhovnanyan.homework_01;
 
 public class Homework_1_ex_8_9_10 {
 
