@@ -1,4 +1,6 @@
-public class TaskTwentyFive {
+package src.OfeliaSahakyan;
+
+public class Task_25 {
     public static void main(String args[]) {
         int a = 42;
         int b = 58;
