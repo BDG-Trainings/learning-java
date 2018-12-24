@@ -12,7 +12,7 @@ public class exercises251_260 {
          */
         int[]array={-8,4,-2,8,4,2,-7};
         int max=array[0];
-        for (int i = 0; i <array.length ; i++) {
+        for (int i = 1; i <array.length ; i++) {
             if(array[i]>max){
                 max=array[i];
             }
@@ -25,7 +25,7 @@ public class exercises251_260 {
          */
         int[] array1= {8,4,-2,8,4,2,-1, 0};
         int min=array1[0];
-        for (int i = 0; i <array1.length ; i++) {
+        for (int i = 1; i <array1.length ; i++) {
             if(array1[i]<min){
                 min=array[i];
             }
