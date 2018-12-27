@@ -1,4 +1,6 @@
-public class TaskTwentyNine {
+package src.OfeliaSahakyan;
+
+public class Task_29 {
     public static void main(String args[]) {
         int a = 42;
         int b = 58;
@@ -32,4 +34,3 @@ public class TaskTwentyNine {
         }
     }
 }
-
