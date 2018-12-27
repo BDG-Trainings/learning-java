@@ -1,6 +1,6 @@
 package SPapoyan.lessons_03;
 
-public class Java_221 {
+public class App_221 {
     public static void main (String [] args) {
         int a = 10;
         int b = 45;
