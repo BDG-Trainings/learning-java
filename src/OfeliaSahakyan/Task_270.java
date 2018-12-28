@@ -1,4 +1,4 @@
-package src.OfeliaSahakyan;
+package OfeliaSahakyan;
 
 public class Task_270 {
     public static void main(String[] args) {
