@@ -1,4 +1,4 @@
-package Hayk.Hertevtsyan;
+package Hayk.Hertevtsyan.lesson02;
 
 public class APP_62 {
     public static void main(String[] args) {

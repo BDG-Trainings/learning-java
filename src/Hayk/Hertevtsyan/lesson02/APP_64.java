@@ -1,18 +1,18 @@
-package Hayk.Hertevtsyan;
+package Hayk.Hertevtsyan.lesson02;
 
-public class APP_70 {
+public class APP_64 {
     public static void main(String[] args) {
-        int a = 9859;
+        int a = 2150;
         int haz = a/1000;
         int har = (a-haz*1000)/100;
         int tas = (a-haz*1000-har*100)/10;
         int miav = a-haz*1000-har*100-tas*10;
-        int y;
-        if (haz * har * tas * miav > 200) {
-            y = 1;
+        char y;
+        if (tas + miav == 5) {
+            y = 's';
             System.out.println(y);
         } else {
-            y = 0;
+            y = 'd';
             System.out.println(y);
         }
     }

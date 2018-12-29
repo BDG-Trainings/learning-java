@@ -1,12 +1,12 @@
-package Hayk.Hertevtsyan;
+package Hayk.Hertevtsyan.lesson02;
 
-public class APP_29 {
+public class APP_30 {
     public static void main(String[] args) {
         int a = 97;
         int b = 900;
         int c = 526;
-        if (a < b && a < c) {
-            if (b < c) {
+        if (a > b && a > c) {
+            if (b > c) {
                 System.out.println(a);
                 System.out.println(b);
                 System.out.println(c);
@@ -16,8 +16,8 @@ public class APP_29 {
                 System.out.println(b);
             }
         }
-        if (b < a && b < c) {
-            if (a < c) {
+        if (b > a && b > c) {
+            if (a > c) {
                 System.out.println(b);
                 System.out.println(a);
                 System.out.println(c);
@@ -27,8 +27,8 @@ public class APP_29 {
                 System.out.println(a);
             }
         }
-        if (c < a && c < c) {
-            if (b < a) {
+        if (c > a && c > c) {
+            if (b > a) {
                 System.out.println(c);
                 System.out.println(b);
                 System.out.println(a);
