@@ -6,6 +6,8 @@ public class App_370 {
 
     public static void main(String[] args) {
 
+        System.err.println(System.currentTimeMillis());
+
         Random num = new Random ();
         final int row = 5;
         final int column = 5;
