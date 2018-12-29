@@ -10,6 +10,7 @@ public class APP_251 {
 //                System.out.println(massive[i]);
                 max = massive[i];
             }
+
         }
         System.out.println("Զանգվածի մեծագույն տարրը = " + max);
     }
