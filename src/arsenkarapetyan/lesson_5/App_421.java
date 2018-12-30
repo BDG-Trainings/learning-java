@@ -21,8 +21,8 @@ public class App_421 {
             }System.err.println();
         }
 
-        for (int m=0; m<row; m++){
-            for (int f = 0; f<m; f++){
+        for (int m= 0; m < row; m++){
+            for (int f = 0; f < m; f++){
                 if (array[m][f]%4 == 0){
                     System.err.print(array[m][f]+ "\t");
                     count++;
