@@ -17,8 +17,7 @@ public class App_429 {
         for (int i =0 ; i < row; i++) {
             for (int k = 0; k < column; k++) {
 
-                int a = (num.nextInt(90)+10);
-                ars[i][k] = a;
+                ars[i][k] = (num.nextInt(90)+10);
                 System.out.print(ars[i][k] + "\t");
             }
             System.out.println();
@@ -39,6 +38,6 @@ public class App_429 {
             }
         }
         System.out.println();
-        System.out.println("glxavor ankyunagci kam verev gtnvogh tarreri qanake voronq 5 bazhanelis kmna 2 mnacord:" + count);
+        System.out.println("glxavor ankyunagci kam verev gtnvogh tarreri qanake voronq 5 bazhanelis kmna 2 mnacord havasar e: " + count);
     }
 }
