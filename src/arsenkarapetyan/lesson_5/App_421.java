@@ -15,8 +15,7 @@ public class App_421 {
 
         for (int i=0; i<row; i++){
             for (int k = 0; k<column; k++){
-                int a = (num.nextInt(100));
-                array[i][k]=a;
+                array[i][k] = (num.nextInt(100));
                 System.err.print(array[i][k]+ "\t");
             }System.err.println();
         }
@@ -24,7 +23,7 @@ public class App_421 {
         for (int m= 0; m < row; m++){
             for (int f = 0; f < m; f++){
                 if (array[m][f]%4 == 0){
-                    System.err.print(array[m][f]+ "\t");
+                    System.out.print(array[m][f]+ "\t");
                     count++;
                 } else {
                     System.out.print(array[m][f]+ "\t");

@@ -15,8 +15,7 @@ public class App_370 {
 
         for (int i=0; i<row; i++){
             for (int k = 0; k<row; k++){
-                int a = (num.nextInt(90) + 10);
-                array[i][k]=a;
+                array[i][k] = (num.nextInt(90) + 10);
                 System.err.print(array[i][k]+ "\t");
             }System.err.println();
         }
