@@ -6,6 +6,7 @@ public class App_61 {
 
         boolean t = false;
         int a = -9568;
+        char b = ' ';
 
         int haz = Math.abs(a/1000);
         int har = Math.abs((a%1000)/100);
@@ -16,6 +17,9 @@ public class App_61 {
             t = true;
         }
         System.out.println(t);
-        System.out.println("Tive: " + haz + har + tas + mia);
+        if (a < 0){
+            b = '-';
+        }
+        System.out.println("Tive: " + b + haz + har + tas + mia);
     }
 }
