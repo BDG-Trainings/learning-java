@@ -1,5 +1,6 @@
 package arsenkarapetyan.lesson_5;
 
+import java.math.BigDecimal;
 import java.util.Random;
 
 public class App_434 {
@@ -17,8 +18,7 @@ public class App_434 {
 
         for (int i =0 ; i < row; i++) {
             for (int k = 0; k < column; k++) {
-
-                ars[i][k] = (num.nextFloat()*100-50);
+                ars[i][k] = precision(2, num.nextFloat()*100-50);
                 System.out.print(ars[i][k] + "\t\t");
             }
             System.out.println();
@@ -34,7 +34,7 @@ public class App_434 {
                     }
                 }
                 else {
-                    System.out.print("\t");
+                    System.out.print("\t\t");
                 }
             }
             System.out.println();
@@ -42,5 +42,11 @@ public class App_434 {
         System.out.println();
         System.out.println(a + "-ic " + b + " mijakayqym gymare havasar e: " + sum);
 
+    }
+    public static Float precision(int decimalPlace, Float d) {
+
+        BigDecimal bd = new BigDecimal(Float.toString(d));
+        bd = bd.setScale(decimalPlace, BigDecimal.ROUND_HALF_UP);
+        return bd.floatValue();
     }
 }
