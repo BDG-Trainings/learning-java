@@ -4,7 +4,7 @@ public class App_23 {
 
     public static void main(String[] args) {
 
-        int a = -5;
+        inytt a = -5;
         int b = 11;
         int c = -5;
 
