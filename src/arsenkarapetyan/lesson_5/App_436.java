@@ -27,16 +27,11 @@ public class App_436 {
         System.out.println();
 
         for (int i = 0; i < row; i++){
-            for(int k = 0; k < column; k++) {
-                if (k > column-i-1){
+            for(int k = 0; k < i; k++) {
                     System.out.print(ars[i][k] + "\t");
                     if (Math.abs(ars[i][k])>= a && Math.abs(ars[i][k]) <= b) {
                         sum=sum+ars[i][k];
                         count++;
-                    }
-                }
-                else {
-                    System.out.print("\t\t");
                 }
             }
             System.out.println();
