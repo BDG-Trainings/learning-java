@@ -36,7 +36,7 @@ public class App_450 {
             System.out.println();
         }
         System.out.println();
-        System.out.println("ozhandak ankyunagcic nerqev gtnvogh tatrreri arzheqneri kotorakayin maseri gymare havasar e: " + sum/100);
+        System.out.println("ozhandak ankyunagcic nerqev gtnvogh tarreri arzheqneri kotorakayin maseri gymare havasar e: " + sum/100);
     }
 
     public static Float precision(int decimalPlace, Float d) {
