@@ -37,7 +37,6 @@ public class App_451 {
                 }
             }
         }
-
         System.out.println("glxavor ankyunagci gymare havasar e: " + sum_glx);
         System.out.println("ozhandak ankyunagci gymare havasar e: " + sum_ozh);
     }
