@@ -30,6 +30,7 @@ public class App_451 {
                 }
             }
         }
+
         for (int i = 0; i < row; i++) {
             for (int k = 0; k < column; k++) {
                 if (i+k == row-1){
@@ -37,6 +38,7 @@ public class App_451 {
                 }
             }
         }
+
         System.out.println("glxavor ankyunagci gymare havasar e: " + sum_glx);
         System.out.println("ozhandak ankyunagci gymare havasar e: " + sum_ozh);
     }
