@@ -9,8 +9,6 @@ public class App_438 {
 
         final int row = 9;
         final int column = 9;
-        float a = 5.4f;
-        float b = 15.3f;
         int count = 0;
 
         Random num = new Random ();
