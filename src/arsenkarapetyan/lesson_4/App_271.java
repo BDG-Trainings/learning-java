@@ -14,6 +14,6 @@ public class App_271 {
                 count_value++;
             }
         }
-        System.out.println("a-eri qanake: " + count_value + " hat e");
+        System.out.println("a-eri qanake hetevyaln e: " + count_value + " hat e");
     }
 }
