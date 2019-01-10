@@ -12,10 +12,11 @@ public class App_266 {
         } System.out.println("X զանգվածի կենտ արժեք ունեցող տարրերի գումարը = "+sum);
         int sum1 = 0;
         for (int k = 0; k< Y.length; k++) {
-            if (Y[k]%2 == 2) {
-                sum1 = sum + Y[k];
+            if (Y[k]%2 == 0) {
+                sum1 = sum1 + Y[k];
             }
         } System.out.println("Y զանգվածի զույգ արժեք ունեցող տարրերի գումարը = " +sum1);
-        System.out.println("X զանգվածի);
+        System.out.println("X զանգվածի կենտ արժեք ունեցող տարրերի գումարի և " +
+                "Y զանգվածի զույգ արժեք ունեցող տարրերի գումարի տարբերությունը = " +(sum-sum1));
     }
 }
