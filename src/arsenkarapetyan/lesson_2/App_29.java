@@ -1,4 +1,4 @@
-package arsenkarapetyan.lesson_02;
+package arsenkarapetyan.lesson_2;
 
 public class App_29 {
     public static void main(String[] args) {
