@@ -6,7 +6,7 @@ public class App_291 {
     public static void main (String[]args) {
 
         int [] X = {1,2,3,-4,5,-6,-7,8,-9,10};
-        int k = 0;
+            int k = 0;
         for (int i=0; i<X.length; i++) {
             if (X[i] < 0)
                 k++;
