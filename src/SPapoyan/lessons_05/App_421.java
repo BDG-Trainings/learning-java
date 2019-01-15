@@ -1,60 +1,39 @@
 package SPapoyan.lessons_05;
-
 import java.util.Random;
-
 public class App_421 {
-
-    private final static Random rand = new Random();
-
+    private static Random H = new Random();
     public static void main(String[] args) {
-
-        final int m = 5;
-        int number = 4;
-
-        int array[][] = new int[m][m];
+        int m = 5;
+        int number = 10;
         int count = 0;
-
+        int arr[][] = new int[m][m];
         for (int i = 0; i < m; i++) {
             for (int k = 0; k < m; k++) {
-                array[i][k] = rand.nextInt(100);
+                arr[i][k] = H.nextInt(100);
+                System.out.print(arr[i][k] + ",");
             }
+            System.out.println();
         }
-        displayArray(array, m, m);
-
-
-        System.out.println("-------");
-
+        System.out.print("---------------");
         for (int i = 0; i < m; i++) {
             for (int k = 0; k <= i; k++) {
-                if (i == k) {
-
-                    System.out.print(array[i][k] + ", ");
+                if (i > k) {
+                    System.out.print(arr[i][k] + ", ");
                 }
             }
             System.out.println();
         }
-
+        System.out.println("---------------");
         for (int i = 0; i < m; i++) {
-            for (int k = 0; k < i; k++) {
-
-                if (array[i][k] % number == 0) {
+            for (int k = 0; k < m; k++) {
+                if (arr [i][k]% number == 0 && i>k) {
                     count++;
+
                 }
             }
-        }
 
-        System.out.println("Count : " + count);
+        } System.out.println("Count = " + count);
 
     }
-
-    private static void displayArray(final int[][] array, final int row, final int col) {
-        for (int i = 0; i < row; i++) {
-            for (int k = 0; k < col; k++) {
-                System.out.print(array[i][k] + ", ");
-            }
-            System.out.println();
-        }
-    }
-
 }
 
