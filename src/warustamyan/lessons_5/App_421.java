@@ -10,7 +10,7 @@ public class App_421 {
     public static void main(String[] args) {
 
         final int m = 5;
-        int number = 10;
+        int number = 4;
 
         int array[][] = new int[m][m];
         int count = 0;
