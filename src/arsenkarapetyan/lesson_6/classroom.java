@@ -5,6 +5,7 @@ import java.util.Random;
 public class classroom {
 
     public static void main(String[] args) {
+
         System.out.println("privet");
 
         final int row = 9;
