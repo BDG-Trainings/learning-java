@@ -5,6 +5,10 @@ public class Employee {
     String firstName;
     String lastName;
 
+    int getId(){
+        return id;
+    }
+
     public static void main(String[] args) {
         Employee emp = new Employee();
 
