@@ -80,25 +80,37 @@ public class Time {
     }
 
     public Time nextSecond(){
-        Time vremya = new Time(hour, minute, second);
+        Time vremya_vpered = new Time(hour, minute, second);
         if (second==59){
-            vremya.setSecond(0);
-            vremya.setMinute(minute+1);
+            vremya_vpered.setSecond(0);
+            vremya_vpered.setMinute(minute+1);
             if(minute==59){
-               vremya.setHour(hour+1);
+               vremya_vpered.setHour(hour+1);
+               if (hour==23){
+                   vremya_vpered.setHour(0);
+                }
             }
         }else{
-            vremya.setSecond(second+1);
+            vremya_vpered.setSecond(second+1);
         }
-        return vremya;
+        return vremya_vpered;
     }
 
     public Time previousSecond(){
-        Time vremya = new Time(getHour(),getMinute(),getSecond());
-        vremya.setSecond(getSecond()-1);
-        vremya.getSecond();
-        return vremya;
+        Time vremya_nazad = new Time(hour, minute, second);
+        if (second == 0){
+            vremya_nazad.setSecond(59);
+            vremya_nazad.setMinute(minute-1);
+            if (minute == 0){
+                vremya_nazad.setMinute(59);
+                if (hour == 0){
+                    vremya_nazad.setHour(23);
+                }
+            }
+        }else {
+            vremya_nazad.setSecond(second-1);
+        }
+        return vremya_nazad;
     }
-
 
 }
