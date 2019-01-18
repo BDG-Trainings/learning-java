@@ -26,7 +26,6 @@ public class Circle {
         double C = 2*this.radious*Math.PI;
         return C;
     }
-
     @Override
     public String toString() {
         String str = "Circle[radious="+this.radious+"]";
