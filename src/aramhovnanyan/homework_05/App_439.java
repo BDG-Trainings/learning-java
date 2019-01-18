@@ -1,0 +1,46 @@
+package aramhovnanyan.homework_05;
+
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Random;
+
+public class App_439 {
+    private final static Random rand = new Random();
+
+    public static void main(String[] args) {
+        final int m = 5;
+        double array[][] = new double[m][m];
+        double tiv = 1;
+        fillArray(array, m, m, 0, 100);
+
+        for(int i = 0; i < array.length - 1; i ++) {
+            for (int j = i + 1; j < array.length; j++) {
+                if ((i + j) % 2 == 1) {
+                    tiv = tiv * array[i][j];
+                }
+            }
+        }
+        System.out.println("---------------");
+        System.out.println("Պահանջվող արժեքն է " + tiv);
+    }
+
+    private static void fillArray(double[][] array, final int row, final int col, final double left, final double right){
+        for (int i = 0; i < row; i++) {
+            for (int k = 0; k < col; k++) {
+                array[i][k] = left + rand.nextDouble() * (right - left);
+            }
+        }
+        displayArray(array, row, col);
+    }
+
+    private static void displayArray(final double[][] array, final int row, final int col) {
+        NumberFormat nf = new DecimalFormat("#0.0");
+        for (int i = 0; i < row; i++) {
+            for (int k = 0; k < col; k++) {
+                System.out.print(nf.format(array[i][k]) + "\t");
+            }
+            System.out.println();
+        }
+    }
+
+}
