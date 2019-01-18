@@ -95,7 +95,7 @@ public class exercises21_36 {
         /*
          *  N 27
          *  ete trvac tver@ tvabanakan progresia en kazmum,
-         *  print 'tre' hakarak depqum 'false'
+         *  print 'true' hakarak depqum 'false'
          *  http://www.hitbullseye.com/acad/quant/images/AP-GP-QR-signature.png
          **/
         a = 5;
