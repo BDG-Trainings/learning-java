@@ -6,8 +6,6 @@ public class Account {
     static String name;
     static int balance = 0;
 
-    Account cust;
-
     public Account (String id, String name){
         this.id = id;
         this.name = name;
@@ -48,15 +46,13 @@ public class Account {
     public int transferTo (Account another, int amount){
         if (amount <= balance){
             balance = balance - amount;
-            cust = another;
-            cust.credit(amount);
+            another.credit(amount);
         }
         else {
             System.out.println("Amount exceeded balance");
         }
         return balance;
     }
-
 
     public static void main(String[] args) {
 
