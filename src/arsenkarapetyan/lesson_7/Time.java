@@ -112,5 +112,4 @@ public class Time {
         }
         return vremya_nazad;
     }
-
 }
