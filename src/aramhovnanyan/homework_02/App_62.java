@@ -1,6 +1,6 @@
 package arsenkarapetyan.lesson_02;
 
-public class App_62 {
+public class pp_62 {
 
     public static void main(String[] args) {
 
