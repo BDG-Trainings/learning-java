@@ -5,11 +5,11 @@ class Account {
     private String name;
     private int balance=0;
 
-    Account(String id, String name){
+    public Account(String id, String name){
         this.id = id;
         this.name = name;
     }
-    Account(String id, String name, int balance){
+    public Account(String id, String name, int balance){
         this.id = id;
         this.name = name;
         this.balance =balance;
@@ -50,6 +50,11 @@ class Account {
     }
     public static void main(String []args){
         Account account = new Account("ID1","ANUN1");
-        System.out.print(account.toString());
+        Account b = new Account("sss", "SSS", 12);
+        System.out.println(account.toString());
+        System.out.println(b.toString());
+        b.debit(10);
+        System.out.println(b.debit(10));
+
     }
 }
