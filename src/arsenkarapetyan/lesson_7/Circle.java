@@ -2,8 +2,8 @@ package arsenkarapetyan.lesson_7;
 
 public class Circle {
 
-    static double radius=1.0;
-    static String color = "red";
+    private double radius=1.0;
+    private String color = "red";
 
     public Circle(){
     }
