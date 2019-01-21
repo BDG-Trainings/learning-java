@@ -44,7 +44,6 @@ public class Circle {
     }
 
     public static void main(String[] args) {
-
         Circle c = new Circle(5, "black");
         System.out.println(c.toString());
         System.out.println("Area is equal: " + c.getArea());
