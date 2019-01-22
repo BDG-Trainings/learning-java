@@ -2,11 +2,11 @@ package arsenkarapetyan.lesson_7;
 
 public class Rectangle {
 
-    private float lenght;
+    private float length;
     private float width;
 
     public Rectangle (){
-        lenght = 1.0f;
+        length = 1.0f;
         width = 1.0f;
     }
 
@@ -16,11 +16,11 @@ public class Rectangle {
     }
 
     public float getLenght(){
-        return lenght;
+        return length;
     }
 
     public void setLenght(float lenght){
-        this.lenght = lenght;
+        this.length = lenght;
     }
 
     public float getWidth(){
@@ -32,15 +32,15 @@ public class Rectangle {
     }
 
     public double getArea (){
-        return lenght * width;
+        return length * width;
     }
 
     public double getPerimeter (){
-        return (lenght + width) * 2;
+        return (length + width) * 2;
     }
 
     public String toString (){
-        return "Lenght: " + getLenght() + ", width: " + getWidth();
+        return "Length: " + getLenght() + ", width: " + getWidth();
     }
 
     public static void main(String[] args) {

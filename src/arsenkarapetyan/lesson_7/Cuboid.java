@@ -2,12 +2,12 @@ package arsenkarapetyan.lesson_7;
 
 public class Cuboid {
 
-    private float lenght;
+    private float length;
     private float width;
     private float height;
 
     public Cuboid (){
-        lenght = 1.0f;
+        length = 1.0f;
         width = 1.0f;
         height = 1.0f;
     }
@@ -19,7 +19,7 @@ public class Cuboid {
     }
 
     public void setLenght(float lenght) {
-        this.lenght = lenght;
+        this.length = lenght;
     }
 
     public void setWidth(float width) {
@@ -31,7 +31,7 @@ public class Cuboid {
     }
 
     public float getLenght() {
-        return lenght;
+        return length;
     }
 
     public float getWidth() {
