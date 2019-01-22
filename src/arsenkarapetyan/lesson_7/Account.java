@@ -4,11 +4,12 @@ public class Account {
 
     private String id;
     private String name;
-    private int balance = 0;
+    private int balance;
 
     public Account (String id, String name){
         this.id = id;
         this.name = name;
+        balance = 0;
     }
 
     public Account (String id, String name, int balance){

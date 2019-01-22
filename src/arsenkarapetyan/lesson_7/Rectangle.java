@@ -2,10 +2,13 @@ package arsenkarapetyan.lesson_7;
 
 public class Rectangle {
 
-    private float lenght = 1.0f;
-    private float width = 1.0f;
+    private float lenght;
+    private float width;
 
-    public Rectangle (){}
+    public Rectangle (){
+        lenght = 1.0f;
+        width = 1.0f;
+    }
 
     public Rectangle (float lenght, float width){
         setLenght(lenght);
@@ -37,7 +40,7 @@ public class Rectangle {
     }
 
     public String toString (){
-        return "Lenght: " + lenght + ", width: " + width;
+        return "Lenght: " + getLenght() + ", width: " + getWidth();
     }
 
     public static void main(String[] args) {
@@ -45,5 +48,10 @@ public class Rectangle {
         System.out.println("Area is: " + rec.getArea());
         System.out.println("Perimeter is: " + rec.getPerimeter());
         System.out.println(rec.toString());
+        System.out.println();
+        Rectangle rec1 = new Rectangle ();
+        System.out.println("Area is: " + rec1.getArea());
+        System.out.println("Perimeter is: " + rec1.getPerimeter());
+        System.out.println(rec1.toString());
     }
 }
