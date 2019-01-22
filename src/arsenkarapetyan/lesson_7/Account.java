@@ -2,13 +2,14 @@ package arsenkarapetyan.lesson_7;
 
 public class Account {
 
-    static String id;
-    static String name;
-    static int balance = 0;
+    private String id;
+    private String name;
+    private int balance;
 
     public Account (String id, String name){
         this.id = id;
         this.name = name;
+        balance = 0;
     }
 
     public Account (String id, String name, int balance){

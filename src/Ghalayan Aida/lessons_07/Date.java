@@ -1,11 +1,11 @@
 package Classner;
 
-class Date {
+public class Date {
     private int day;
     private int month;
     private int yaer;
 
-    Date(int day, int month, int yaer){
+    public Date(int day, int month, int yaer){
         this.day = day;
         this.month = month;
         this.yaer = yaer;
@@ -33,11 +33,12 @@ class Date {
         this.yaer = yaer;
     }
     public String toString(){
-        return "'dd/mm/yyyy with leading zero'";
+        return "dd/mm/yyyy" +"="+ day+ "/" + month+ "/"+ yaer
+                ;
     }
     public static void main(String [] args){
         Date Mesrop = new Date(15, 03, 2014);
-        System.out.print(Mesrop.getMonth());
+        System.out.print("Mesrop."+Mesrop.toString());
     }
 
 }

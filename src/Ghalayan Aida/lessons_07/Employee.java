@@ -1,13 +1,13 @@
 package Classner;
 
- class Employee {
+ public class Employee {
 
         private int id;
         private String firstName;
         private String lastName;
         private int salary;
 
-  Employee(int id, String firstName, String lastName, int salary){
+ public Employee(int id, String firstName, String lastName, int salary){
     this.id = id;
     this.firstName = firstName;
     this.lastName = lastName;
@@ -45,9 +45,7 @@ package Classner;
   }
   public static void main(String[]args){
       Employee nor = new Employee(55, "Anun", "Azganun",30000);
-      int Ashxatox = nor.getSalary();
-      Ashxatox = nor.raiseSalary(20);
-      Ashxatox = nor.getId();
-      System.out.print(Ashxatox);
+      System.out.println(nor.toString());
+      System.out.println("new salary="+ nor.raiseSalary(50));
   }
  }

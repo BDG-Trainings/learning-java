@@ -1,4 +1,4 @@
-package src.ofeliasahakyan.lesson_7;
+/*package src.ofeliasahakyan.lesson_7;
 
 public class Account {
     String id;
@@ -47,3 +47,4 @@ public class Account {
         return "Account[id="+id+","+"name="+name+","+"balance="+balance+"]";
     }
 }
+*/

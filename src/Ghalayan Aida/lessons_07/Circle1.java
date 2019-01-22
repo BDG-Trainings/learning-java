@@ -2,11 +2,11 @@ package Classner;
 
 import java.awt.geom.Area;
 
-class Circle1 {
+public class Circle1 {
     private double radius= 1.0;
-    Circle1(){
+    public Circle1(){
     }
-    Circle1(double radius){
+    public Circle1(double radius){
         this.radius = radius;
     }
     public double getRadius(){
@@ -26,7 +26,9 @@ class Circle1 {
     }
     public static void main(String [] args){
         Circle1 X = new Circle1(10.0);
+        Circle1 Y = new Circle1();
+        System.out.println(X.getArea());
+        System.out.print(Y.getCircumference());
 
-        System.out.print(X.getArea());
     }
 }

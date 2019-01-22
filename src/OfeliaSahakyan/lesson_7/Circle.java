@@ -1,4 +1,4 @@
-package src.ofeliasahakyan.lesson_7;
+/*package src.ofeliasahakyan.lesson_7;
 
 public class Circle {
     double radius=1.0;
@@ -10,7 +10,9 @@ public class Circle {
     public String getColor(){return color;}
     public void setRadius(double radius){this.radius=radius;}
     public void setColor(String color){this.color=color;}
-    public String toString(){
-        return "Circle[radius="+radius+","+"color="+color+"]";
-        public double getArea(){}
-}
+    public String toString() {
+        return "Circle[radius=" + radius + "," + "color=" + color + "]";
+
+        }
+    }
+}*/

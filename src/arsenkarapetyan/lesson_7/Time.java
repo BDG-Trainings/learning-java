@@ -2,9 +2,9 @@ package arsenkarapetyan.lesson_7;
 
 public class Time {
 
-    static int hour;
-    static int minute;
-    static int second;
+    private int hour;
+    private int minute;
+    private int second;
 
     public Time (int hour, int minute, int second){
         setTime(hour, minute, second);
