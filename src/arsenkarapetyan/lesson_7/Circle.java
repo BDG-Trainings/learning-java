@@ -2,19 +2,22 @@ package arsenkarapetyan.lesson_7;
 
 public class Circle {
 
-    private double radius=1.0;
-    private String color = "red";
+    private double radius;
+    private String color;
 
     public Circle(){
+        radius = 1.0;
+        color = "red";
     }
 
     public Circle(double radius){
-        this.radius = radius;
+        setRadius(radius);
+        color = "red";
     }
 
     public Circle(double radius, String color){
-        this.radius = radius;
-        this.color = color;
+        setRadius(radius);
+        setColor(color);
     }
 
     public double getRadius (){
@@ -34,19 +37,21 @@ public class Circle {
     }
 
     public String toString(){
-        String str = "Radius is equal: " + this.radius + " and color is equal: " + this.color;
-        return str;
+        return "Radius is equal: " + getRadius() + " and color is equal: " + getColor();
     }
 
     public double getArea(){
-        double area = Math.PI * Math.pow((double)this.radius, 2);
-        return area;
+        return Math.PI * Math.pow((double)this.radius, 2);
+
     }
 
     public static void main(String[] args) {
         Circle c = new Circle(5, "black");
         System.out.println(c.toString());
         System.out.println("Area is equal: " + c.getArea());
+        Circle c1 = new Circle ();
+        System.out.println(c1.toString());
+        System.out.println("Area is equal: " + c1.getArea());
     }
 }
 
