@@ -30,10 +30,13 @@ public class exercises421_430 {
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < m; j++) {
                 if(i<j) {
+                    //i<j -> ankjunagcic verev
                     System.out.print(A1[i][j] + ", ");
                 } else if(i==j){
+                    //i==j -> ankjunagci vra
                     System.out.print( "--, ");
                 } else {
+                    //i>j -> ankjunagcic nerqev
                     System.out.print( "**, ");
                 }
             }
