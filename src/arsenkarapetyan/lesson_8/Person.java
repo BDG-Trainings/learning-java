@@ -57,6 +57,6 @@ public class Person {
     }
 
     public String toString() {
-        return "First Name: " + firstName + "/n Last Name: " + lastName + "/n Middle name: " + middleName + "/n Age: " + age;
+        return "First Name: " + firstName + "\nLast Name: " + lastName + "\nMiddle name: " + middleName + "\nAge: " + age;
     }
 }

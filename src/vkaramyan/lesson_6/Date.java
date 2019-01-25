@@ -1,4 +1,4 @@
-package vkaramyan.lesson_6;
+/*package vkaramyan.lesson_6;
 
 public class Date {
 	
@@ -59,3 +59,4 @@ public class Date {
 	}
 
 }
+*/

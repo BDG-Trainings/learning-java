@@ -1,4 +1,4 @@
-package vkaramyan.lesson_6;
+/*package vkaramyan.lesson_6;
 
 public class Time {
 	
@@ -60,3 +60,4 @@ public class Time {
 	}
 
 }
+*/
