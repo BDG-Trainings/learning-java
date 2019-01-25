@@ -17,7 +17,7 @@ public class ResourceManagement {
         }
     }
 
-    public Department findDepartmentByName(final String  departmentName) {
+    public final Department findDepartmentByName(final String  departmentName) {
         Department department = null;
         for (int i = 0; i < departments.length; i++) {
             if (departments[i].getDepartmentName().equals(departmentName)) {
@@ -28,7 +28,7 @@ public class ResourceManagement {
         return department;
     }
 
-    public Department getDepartmentWithMaxSalary() {
+    public final Department getDepartmentWithMaxSalary() {
         if (departments.length > 0) {
             Department maxDepartment = departments[0];
             for (int  i = 0; i < departments.length; i++) {

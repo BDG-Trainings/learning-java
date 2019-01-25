@@ -6,6 +6,13 @@ public class Department {
     private Employee departmentHeadEmployee;
     private double departmentSalary;
 
+    public Department(final String departmentName, final Employee[] employees, final Employee departmentHeadEmployee, final double departmentSalary) {
+        this.departmentHeadEmployee = departmentHeadEmployee;
+        this.departmentName = departmentName;
+        this.employees = employees;
+        this.departmentSalary = departmentSalary;
+    }
+
     public void setDepartmentName(final String departmentName) {
         this.departmentName = departmentName;
     }
@@ -36,11 +43,18 @@ public class Department {
     }
 
     public Employee [] addEmployeeToDepartment(final Employee employee) {
-        Employee [] newEmployees = new Employee[employees.length + 1];
-        for (int i = 0; i < employees.length; i++) {
+        int employeesLength = employees == null? 0 : employees.length; // if employees array is null, then it's length is 0
+/*        if (employees == null) {
+            employeesLength = 0;
+        } else {
+            employeesLength = employees.length;
+        } */
+        Employee [] newEmployees = new Employee[employeesLength + 1];
+        for (int i = 0; i < employeesLength; i++) {
             newEmployees[i] = employees[i];
         }
-        newEmployees[employees.length] = employee;
+        newEmployees[employeesLength] = employee;
+        employee.setDepartment(this);
         employees = newEmployees;
         departmentSalary += employee.getSalary();
         return employees;

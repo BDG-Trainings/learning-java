@@ -3,12 +3,12 @@ package ArmenIskandaryan.Lesson_09;
 public class Employee {
     private double salary;
     private Person person;
-    private Employee employee;
+    private Department department;
 
-    public Employee(final double salary,final Person person,final Employee employee) {
+    public Employee(final double salary,final Person person,final Department department) {
         this.salary = salary;
         this.person = person;
-        this.employee = employee;
+        this.department = department;
     }
 
     public void setPerson(final Person person) {
@@ -27,11 +27,20 @@ public class Employee {
         return salary;
     }
 
-    public void setEmployee(final Employee employee) {
-        this.employee = employee;
+    public void setDepartment(final Department department) {
+        this.department = department;
     }
 
-    public Employee getEmployee() {
-        return employee;
+    public Department getDepartment() {
+        return department;
+    }
+
+    @Override
+    public String toString() {
+        String depName = department == null? "NO DEPARTMENT" : department.getDepartmentName();
+        return "Employee[personFirstName=" + person.getFirstName()
+                        + " " + ",personLastName=" + person.getLastName()
+                        + " " + ",DepartmentName=" + depName
+                + " " + ",salary=" + salary + "]";
     }
 }

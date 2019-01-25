@@ -5,14 +5,14 @@ public class Person {
     private String lastName;
     private String middleName;
     private short age;
-    private Address [] address;
+    private Address [] addresses;
 
-    public Person(final String firstName,final String lastName, final String middleName, final short age, final Address [] address) {
+    public Person(final String firstName,final String lastName, final String middleName, final short age, final Address [] addresses) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.middleName = middleName;
         this.age = age;
-        this.address = address;
+        this.addresses = addresses;
     }
 
     public void setFirstName(final String firstName) {
@@ -47,11 +47,34 @@ public class Person {
         return age;
     }
 
-    public void setAddress(final Address[] address) {
-        this.address = address;
+    public void setAddresses(final Address[] addresses) {
+        this.addresses = addresses;
     }
 
-    public Address[] getAddress() {
-        return address;
+    public Address[] getAddresses() {
+        return addresses;
+    }
+
+    public Address [] addAddressToPerson(final Address address) {
+        Address [] newAddresses = new Address[addresses.length + 1];
+        for (int i = 0; i < addresses.length; i++) {
+            newAddresses[i] = addresses[i];
+        }
+        newAddresses[addresses.length] = address;
+        addresses = newAddresses;
+        return addresses;
+    }
+
+    public Address[] removeAddressFromPerson(final Address address) {
+        Address[] newAddresses = new Address[addresses.length - 1];
+        int indexDelta = 0;
+        for (int i = 0; i + indexDelta < addresses.length; i++) {
+            if (addresses.equals(addresses[i])) {
+                indexDelta = 1;
+            }
+            newAddresses[i] = addresses[i + indexDelta];
+        }
+        addresses = newAddresses;
+        return addresses;
     }
 }
