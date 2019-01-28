@@ -8,16 +8,19 @@ public class MainResourceManagement {
 
         Person person = new Person("name", "firstName", "middleName", (short) 25, addresses);
 
-        Department dep = new Department("dep", null, null,  1000);
-
         Employee newEmp = new Employee(1000, person);
 
         ResourceManagement resourceManagement = new ResourceManagement();
 
-        Department[] departments = new Department[1];
-        departments[0] = dep;
+        Department[] departments = new Department[5];
+        departments[0] = new Department("dep1", null, null, 4000);
+        departments[1] = new Department("dep2", null, null, 3000);
+        departments[2] = new Department("dep3", null, null, 5000);
+        departments[3] = new Department("dep4", null, null, 1000);
+        departments[4] = new Department("dep5", null, null, 2000);
 
 
-        resourceManagement.addEmployeeToDepartment(newEmp, "aaa");
+        resourceManagement.findDepartmentByName("dep3", departments);
+        resourceManagement.getDepartmentWithMaxSalary(departments);
     }
 }
